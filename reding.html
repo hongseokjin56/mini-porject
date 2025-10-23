@@ -1,11 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>게시판</title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
-    <link rel="stylesheet" href="css/notice.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>게시글 상세보기</title>
+  <link rel="stylesheet" href="view.css">
 </head>
 <body>
     <div id="header">
@@ -39,79 +38,50 @@
     </div>
   </div>
 
-<div class="board-wrap">
-  <table class="board-table">
-    <thead>
-      <tr>
-        <th>ID</th>
-        <th>제목</th>
-        <th>글쓴이</th>
-        <th>날짜</th>
-        <th>조회수</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>tjrl031</td>
-        <td><a href="reding.html">비밀글입니다</a></td>
-        <td>석진진자라</td>
-        <td class="status complete">2025-10-23</td>
-        <td>1</td>
-      </tr>
-      <tr>
-        <td>tjrlaa55</td>
-        <td><a href="reding.html">안녕하세요</a></td>
-        <td>무명</td>
-        <td class="status complete">2025-10-23</td>
-        <td>1</td>
-      </tr>
-      <tr>
-        <td></td>
-        <td><a href="reding.html"></a></td>
-        <td></td>
-        <td></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td></td>
-        <td><a href="reding.html"></a></td>
-        <td></td>
-        <td></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td></td>
-        <td><a href="reding.html"></a></td>
-        <td></td>
-        <td></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td></td>
-        <td><a href="reding.html"></a></td>
-        <td></td>
-        <td></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td></td>
-        <td><a href="reding.html"></a></td>
-        <td></td>
-        <td></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
+    <div id="section">
+  <div class="view-wrap">
+    <h1>게시글 상세보기</h1>
+
+    <!-- 게시글 상단 정보 -->
+    <div class="post-info">
+      <div><strong>작성자</strong> <span>홍길동</span></div>
+      <div><strong>작성일</strong> <span>2025-10-23</span></div>
+      <div><strong>조회수</strong> <span>15</span></div>
+      <div><strong>상태</strong> <span class="status complete">확인완료</span></div>
+    </div>
+
+    <!-- 게시글 제목 -->
+    <div class="post-title">
+      <h2>비밀글입니다</h2>
+    </div>
+
+    <!-- 게시글 내용 -->
+    <div class="post-content">
+      <p>
+        안녕하세요. 이 글은 예시 게시글입니다.<br>
+        게시판 상세보기 페이지 디자인을 테스트 중입니다.<br><br>
+        깔끔하고 심플한 디자인으로 구성하였으며,<br>
+        내용 부분에는 자동 줄바꿈 및 여백이 적용됩니다.
+      </p>
+    </div>
+
+    <!-- 첨부파일 -->
+    <div class="post-file">
+      <strong>첨부파일:</strong>
+      <a href="#">example.pdf</a>
+    </div>
+
+    <!-- 버튼 -->
+    <div class="btn-wrap">
+      <button class="edit-btn">수정</button>
+      <button class="delete-btn">삭제</button>
+      <button class="list-btn" onclick="location.href='list.html'">목록으로</button>
+    </div>
+  </div>
 </div>
 
 
-
-
-
-
-
-
-  <div id="footer">
+<div id="footer">
     <div class="ft_gnb">
       <ul class="ftgnb_ti">
         <li>
